@@ -1,4 +1,4 @@
 config.php
-	$user = '' ;
+	$user = 'root' ;
 	$pass = '' ;
-	$host = '';
+	$host = 'mysql:host=localhost;dbname=Forum';
