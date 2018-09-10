@@ -2,6 +2,7 @@
 <?php
 
 include "_debut.inc.php";
+//test 2 preuve
 
 echo " <br> 
 <table width='80%' cellspacing='0' cellpadding='0' align='center'>
