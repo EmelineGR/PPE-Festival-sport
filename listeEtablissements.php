@@ -1,4 +1,4 @@
-<?
+<?php
 
 include("_debut.inc.php");
 include("_gestionBase.inc.php"); 
@@ -24,9 +24,7 @@ if (!selectBase($connexion))
 // CETTE PAGE CONTIENT UN TABLEAU CONSTITUÉ D'1 LIGNE D'EN-TÊTE ET D'1 LIGNE PAR
 // ÉTABLISSEMENT
 
-echo "
-<table width='70%' cellspacing='0' cellpadding='0' align='center' 
-class='tabNonQuadrille'>
+echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='tabNonQuadrille'>
    <tr class='enTeteTabNonQuad'>
       <td colspan='4'>Etablissements</td>
    </tr>";
@@ -39,7 +37,7 @@ class='tabNonQuadrille'>
    {
       $id=$lgEtab['id'];
       $nom=$lgEtab['nom'];
-      echo "
+      echo" 
 		<tr class='ligneTabNonQuad'>
          <td width='52%'>$nom</td>
          
@@ -55,25 +53,23 @@ class='tabNonQuadrille'>
          // d'abord les supprimer avant de pouvoir supprimer l'établissement
 			if (!existeAttributionsEtab($connexion, $id))
 			{
-            echo "
+            echo" 
             <td width='16%' align='center'> 
             <a href='suppressionEtablissement.php?action=demanderSupprEtab&amp;id=$id'>
             Supprimer</a></td>";
-         }
-         else
-         {
-            echo "
-            <td width='16%'>&nbsp; </td>";          
 			}
-			echo "
-      </tr>";
+			else
+			{
+				echo" <td width='16%'>&nbsp; </td>";          
+			}
+			echo "</tr>";
       $lgEtab=mysql_fetch_array($rsEtab);
    }   
-   echo "
+   echo"
    <tr class='ligneTabNonQuad'>
       <td colspan='4'><a href='creationEtablissement.php?action=demanderCreEtab'>
-      Création d'un établissement</a ></td>
+      Création d un établissement</a ></td>
   </tr>
 </table>";
-
 ?>
+
