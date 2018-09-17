@@ -210,7 +210,7 @@ function modifierAttribChamb($connexion, $idEtab, $idGroupe, $nbChambres)
    $req="select count(*) as nombreAttribGroupe from Attribution where idEtab=
         '$idEtab' and idGroupe='$idGroupe'";
    $rsAttrib=$connexion->query($req);
-   $rsAttrib();
+   $rsAttrib->execute();
    $lgAttrib=$rsAttrib->fetch();
    if ($nbChambres==0)
       $req="delete from Attribution where idEtab='$idEtab' and idGroupe='$idGroupe'";
