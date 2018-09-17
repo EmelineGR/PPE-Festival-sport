@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS Festival;
+Use Festival;
 
 GRANT ALL ON festival . * TO 'festival'@'localhost' IDENTIFIED BY 'secret';
 
