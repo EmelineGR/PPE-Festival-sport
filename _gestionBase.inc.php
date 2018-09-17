@@ -64,8 +64,7 @@ function obtenirDetailEtablissement($connexion, $id)
 function supprimerEtablissement($connexion, $id)
 {
    $req="delete from Etablissement where id='$id'";
-   $r=$connexion->query($req);
-   $r->execute();
+   $connexion->query($req);
 }
  
 function modifierEtablissement($connexion, $id, $nom, $adresseRue, $codePostal, 
@@ -87,8 +86,7 @@ function modifierEtablissement($connexion, $id, $nom, $adresseRue, $codePostal,
          '$nomResponsable',prenomResponsable='$prenomResponsable',
          nombreChambresOffertes='$nombreChambresOffertes' where id='$id'";
    
-   $r=$connexion->query($req);
-   $r->execute();
+   $connexion->query($req);
 }
 
 function creerEtablissement($connexion, $id, $nom, $adresseRue, $codePostal, 
@@ -108,8 +106,7 @@ function creerEtablissement($connexion, $id, $nom, $adresseRue, $codePostal,
          '$civiliteResponsable', '$nomResponsable', '$prenomResponsable',
          '$nombreChambresOffertes')";
    
-   $r=$connexion->query($req);
-   $r->execute();
+   $connexion->query($req);
 }
 
 
@@ -225,8 +222,7 @@ function modifierAttribChamb($connexion, $idEtab, $idGroupe, $nbChambres)
       else
          $req="insert into Attribution values('$idEtab','$idGroupe', $nbChambres)";
    }
-   $r=$connexion->query($req);
-   $r->execute();
+   $connexion->query($req);
 }
 
 // Retourne la requête permettant d'obtenir les id et noms des groupes affectés
