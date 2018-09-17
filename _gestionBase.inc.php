@@ -4,10 +4,19 @@
 
 function connect()
 {
-   $hote="localhost";
-   $login="festival";
-   $mdp="secret";
-   return mysql_connect($hote, $login, $mdp);
+   $hote='mysql:host=localhost;dbname=Festival';
+   $login='root';
+   $mdp='';
+   	try //tentative de connexion (si รงa ne fonctionne pas on fais le catch)
+	{
+		$connexion= new PDO($hote, $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+	}
+	catch (PDOExecption $e) //gestion d'erreur
+	{
+		print "Erreur !:" .$e->getMessage(). "<br/>";
+		die();
+		
+	}
 }
 
 function selectBase($connexion)
