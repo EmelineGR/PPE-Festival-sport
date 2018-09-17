@@ -5,27 +5,29 @@
 function connect()
 {
    $hote='mysql:host=localhost;dbname=Festival';
-   $login='root';
-   $mdp='';
+   $login='festival';
+   $mdp='secret';
    	try //tentative de connexion (si รงa ne fonctionne pas on fais le catch)
 	{
-		$connexion= new PDO($hote, $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		$connexion1= new PDO($hote, $login, $mdp, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 	}
 	catch (PDOExecption $e) //gestion d'erreur
 	{
 		print "Erreur !:" .$e->getMessage(). "<br/>";
 		die();
-		
 	}
+	return $connexion1;
 }
 
 function selectBase($connexion)
 {
-   $bd="festival";
+   $bd="use festival";
    $query="SET CHARACTER SET utf8";
    // Modification du jeu de caractères de la connexion
-   $res=mysql_query($query, $connexion); 
-   $ok=mysql_select_db($bd, $connexion);
+   $res= $connexion->query($query);
+   $res->execute();
+   $ok= $connexion->query($bd);
+   $ok->execute();
    return $ok;
 }
 
@@ -180,8 +182,9 @@ function obtenirNomGroupe($connexion, $id)
 function existeAttributionsEtab($connexion, $id)
 {
    $req="select * From Attribution where idEtab='$id'";
-   $rsAttrib=mysql_query($req, $connexion);
-   return mysql_fetch_array($rsAttrib);
+   $rsAttrib=$connexion->query($req);
+   $rsAttrib->execute();
+   return $rsAttrib->fetch();
 }
 
 // Retourne le nombre de chambres occupées pour l'id étab transmis

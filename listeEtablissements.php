@@ -30,8 +30,9 @@ echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='t
    </tr>";
      
    $req=obtenirReqEtablissements();
-   $rsEtab=mysql_query($req, $connexion);
-   $lgEtab=mysql_fetch_array($rsEtab);
+   $rsEtab=$connexion->query($req);
+   $rsEtab->execute();
+   $lgEtab=$rsEtab->fetch();
    // BOUCLE SUR LES ÉTABLISSEMENTS
    while ($lgEtab!=FALSE)
    {
@@ -63,7 +64,7 @@ echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='t
 				echo" <td width='16%'>&nbsp; </td>";          
 			}
 			echo "</tr>";
-      $lgEtab=mysql_fetch_array($rsEtab);
+      $lgEtab=$rsEtab->fetch();
    }   
    echo"
    <tr class='ligneTabNonQuad'>
