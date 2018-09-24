@@ -5,6 +5,8 @@ insert into Etablissement values ('0350123A', 'Collège Lamartine', '3, avenue d
 insert into Etablissement values ('0351234W', 'Collège Léonard de Vinci', '2 rue Rabelais', '35418', 'Saint-Malo', '0299117474', null, 1,'M.','Durand','Pierre',60);   
 insert into Etablissement values ('11111111', 'Centre de rencontres internationales', '37 avenue du R.P. Umbricht BP 108', '35407', 'Saint-Malo', '0299000000', null, 0, 'M.','Guenroc','Guy',200);
 
+Select * from Etablissement;
+
 -- Certains groupes sont incomplètement renseignés
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g001','Groupe folklorique du Bachkortostan',40,'Bachkirie','O');
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g002','Marina Prudencio Chavez',25,'Bolivie','O');
@@ -51,6 +53,8 @@ insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g04
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g043','Cercle Olivier de Clisson',0,'France - Bretagne','N');
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g044','Kan Tri',0,'France - Bretagne','N');
 
+Select * from Groupe;
+
 -- Les attributions sont fictives
 insert into Attribution values ('0350785N', 'g001', 11);
 insert into Attribution values ('0350785N', 'g002', 9);
@@ -62,7 +66,7 @@ insert into Attribution values ('0351234W', 'g001', 3);
 insert into Attribution values ('0351234W', 'g006', 10);
 insert into Attribution values ('0351234W', 'g007', 7);
 
-
+Select * from Attribution;
 
  
 
