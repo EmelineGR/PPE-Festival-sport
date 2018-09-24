@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 
 -- Certains établissements sont fictifs
-insert into Etablissement values ('0350785N', 'Collège de Moka', '2 avenue Aristide Briand BP 6', '35401', 'Saint-Malo', '0299206990', null,1,'M.','Dupont','Alain',20);
-insert into Etablissement values ('0350123A', 'Collège Lamartine', '3, avenue des corsaires', '35404', 'Paramé', '0299561459', null, 1,'Mme','Lefort','Anne',58);  
-insert into Etablissement values ('0351234W', 'Collège Léonard de Vinci', '2 rue Rabelais', '35418', 'Saint-Malo', '0299117474', null, 1,'M.','Durand','Pierre',60);   
-insert into Etablissement values ('11111111', 'Centre de rencontres internationales', '37 avenue du R.P. Umbricht BP 108', '35407', 'Saint-Malo', '0299000000', null, 0, 'M.','Guenroc','Guy',200);
+insert into Etablissement values ('0350785N', 'Collège de Moka', '2 avenue Aristide Briand BP 6', '35401', 'Saint-Malo', '0299206990', null,1,'M.','Dupont','Alain',20, 'mdp01', TRUE, 'Très sympatiques');
+insert into Etablissement values ('0350123A', 'Collège Lamartine', '3, avenue des corsaires', '35404', 'Paramé', '0299561459', null, 1,'Mme','Lefort','Anne',58, 'mdp02', FALSE, 'Très sympatiques et charmant');  
+insert into Etablissement values ('0351234W', 'Collège Léonard de Vinci', '2 rue Rabelais', '35418', 'Saint-Malo', '0299117474', null, 1,'M.','Durand','Pierre',60, 'mdp03', TRUE, 'nul');   
+insert into Etablissement values ('11111111', 'Centre de rencontres internationales', '37 avenue du R.P. Umbricht BP 108', '35407', 'Saint-Malo', '0299000000', null, 0, 'M.','Guenroc','Guy',200, 'mdp04', TRUE, 'vraiment nul');
 
 Select * from Etablissement;
 
