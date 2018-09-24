@@ -25,6 +25,9 @@ create table Etablissement
 	nomResponsable varchar (25) not null,
 	prenomResponsable varchar (25),
 	nombreChambresOffertes integer,
+	motdepasse varchar(25),
+	convention boolean,
+	infopratique blob(500),
 	constraint pk_Etablissement primary key (id)
 	)ENGINE=INNODB;
 
