@@ -22,7 +22,7 @@ function connect()
 function selectBase($connexion)
 {
    $bd="use festival";
-   $query="SET CHARACTER SET utf8";
+   $query="SET NAMES UTF8";
    // Modification du jeu de caractères de la connexion
    $res= $connexion->query($query);
    $res->execute();
