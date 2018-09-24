@@ -58,7 +58,7 @@ insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g04
 Select * from Groupe;
 
 -- Les attributions sont fictives
-insert into Attribution values ('0350785N', 'g001', 11);
+/*insert into Attribution values ('0350785N', 'g001', 11);
 insert into Attribution values ('0350785N', 'g002', 9);
 
 insert into Attribution values ('0350123A', 'g004', 13);
@@ -66,7 +66,7 @@ insert into Attribution values ('0350123A', 'g005', 8);
 
 insert into Attribution values ('0351234W', 'g001', 3);
 insert into Attribution values ('0351234W', 'g006', 10);
-insert into Attribution values ('0351234W', 'g007', 7);
+insert into Attribution values ('0351234W', 'g007', 7);*/
 
 Select * from Attribution;
 
