@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 -- Certains établissements sont fictifs
 insert into Etablissement values ('0350785N', 'Collège de Moka', '2 avenue Aristide Briand BP 6', '35401', 'Saint-Malo', '0299206990', null,1,'M.','Dupont','Alain',20, 'mdp01', TRUE, 'Très sympatiques');
@@ -9,7 +9,7 @@ insert into Etablissement values ('11111111', 'Centre de rencontres internationa
 Select * from Etablissement;
 
 -- Certains groupes sont incomplètement renseignés
-insert into Groupe ('g101', 'Equipe de curling du limousin', 'Valerie riz', '21 rue glace', 25, 'france', 'O');
+INSERT INTO Groupe (id, nom, identiteResponsable, adressePostale, nombrePersonnes, nomPays, hebergement) VALUES ('g102', 'bipbop', 'bipbip', 'blop', '12', 'france', 'O');
 /*insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g001','Groupe folklorique du Bachkortostan',40,'Bachkirie','O');
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g002','Marina Prudencio Chavez',25,'Bolivie','O');
 insert into Groupe (id, nom, nombrepersonnes, nompays, hebergement) values ('g003','Nangola Bahia de Salvador',34,'Brésil','O');
