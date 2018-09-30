@@ -40,7 +40,7 @@ $nombreChambresOffertes=$lgEtab['nombreChambresOffertes'];
 
 echo "
 <table width='60%' cellspacing='0' cellpadding='0' align='center' 
-class='tabNonQuadrille'>
+class='table table-striped'>
    
    <tr class='enTeteTabNonQuad'>
       <td colspan='3'>$nom</td>

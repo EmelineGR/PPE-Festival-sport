@@ -6,17 +6,17 @@ Idem pour background-color) */
 /* Style de base pour la page (couleur fond : ocre, couleur texte : noir) */
 .basePage 
 {
-   background-color:#FFDD88;
-   color:black;
+   background-color:transparent;
    font:11px Arial, Helvetica, sans-serif;
+   width: 75%;
+   margin:auto;
 }
 
 /* Style pour le titre (couleur du texte : rouge) */
 .titre 
 {
-   background-color:#FFDD88;
-   color:#F50033;
-   font:30px Arial, Helvetica, sans-serif;
+	border-radius : 20px;
+   font:2.5rem Helvetica, sans-serif;
    text-align:center;
 }
 
@@ -29,9 +29,7 @@ Idem pour background-color) */
 /* Style pour le texte de la page d'accueil (couleur : bleu foncé avec mise en
 gras et en italique) */
 .texteAccueil
-{
-   background-color:#FFDD88;
-   color:#000099;       
+{     
    font:14px Georgia, "Times New Roman", Times, serif;
    font-weight:bold;
 }
@@ -50,11 +48,7 @@ texte centré */
 table.tabMenu td
 {
    background-color:#DDFDFF;
-   color:black;
-   border-bottom:1px solid #777777;
-   border-right:1px solid #777777;
-   border-left:1px solid #777777;
-   border-top:1px solid #777777;
+   border: 1px solid #dee2e6;
    padding-left:3px;
    width:33%;
    height:18px;
@@ -64,42 +58,29 @@ table.tabMenu td
 /* Style pour les éléments du menu (mise en gras et italique) */ 
 .menu
 {
-   font:11px Georgia, "Times New Roman", Times, serif;
+   font:20px Georgia, "Times New Roman", Times, serif;
    font-weight:bold;
    font-style:italic;
    text-align:left;
+   padding:.375rem .75rem;
 }
 
 /* STYLES POUR LES TABLEAUX QUADRILLÉS */
 
 /* Style des tableaux avec quadrillage : épaisseur du quadrillage 1px, 
 espacement de 3x entre la bordure gauche de chaque cellule et le texte */
-table.tabQuadrille td
-{
-   border-bottom:1px solid #777777;
-   border-right:1px solid #777777;
-   border-left:1px solid #777777;
-   border-top:1px #777777;
-   padding-left:3px;
-} 
+
 
 /* Style pour la 1ère ligne d'en-tête des tableaux quadrillés : fond avec 
 nuances de jaune et texte centré */
 tr.enTeteTabQuad
 {
-   background-image:url('../images/xpBarre.jpg');
    height:21px;
    text-align:center;
 } 
 
 /* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux 
 quadrillés : fond écru et texte centré */
-tr.ligneTabQuad 
-{
-   background-color:#FFFFE0;
-   text-align:center;
-   color:black;
-}
 
 /* STYLES POUR LES TABLEAUX NON QUADRILLÉS */
 
@@ -107,11 +88,7 @@ tr.ligneTabQuad
 1px */
 table.tabNonQuadrille 
 {
-   background-color:#FFFFE0;
-   border-bottom:1px solid #777777;
-   border-right:1px solid #777777;
-   border-left:1px solid #777777;
-   border-top:1px #777777;
+	border: 1px solid #23272b;
    color:black;
 }
  
@@ -120,11 +97,11 @@ nuances de jaune, texte centré et en gras et trait bas pour séparer l'en-tête
 corps du tableau */
 tr.enTeteTabNonQuad td
 {
-   background-image:url('../images/xpBarre.jpg');
-   height:21px;
+   height:auto;
    text-align:center;
    font-weight:bold;
-   border-bottom:1px solid #777777;
+   border-bottom:1px solid #23272b;
+   font-size: 18px;
 } 
 
 /* Style pour les lignes (autres que la 1ère ligne d'en-tête) des tableaux non 
@@ -132,11 +109,12 @@ quadrillés : fond écru, hauteur plus importante, texte aligné à gauche et
 espacement de 3px entre la bordure gauche de chaque cellule et le texte */
 tr.ligneTabNonQuad td
 {
-   background-color:#FFFFE0;
+   background-color:#FFFFff;
    height:28px;
    text-align:left;
    padding-left:3px;
    color:black;
+   font-size : 15px;
 } 
 
 /* STYLE POUR LES MESSAGES D'ERREUR AFFICHÉS EN BAS DE PAGE (FOND : OCRE, 
@@ -146,7 +124,7 @@ COULEUR DU TEXTE : ROSE) */
 {
    background-color:#FFDD88;
    color:#FF00CC;
-   font-size:14px;
+   font-size:15px;
 }
 
 /* STYLES POUR LES ATTRIBUTIONS */
@@ -156,6 +134,9 @@ td.reserveSiLien
 {
    background-color:#FFFFFF;
    color:black;
+   padding: 0.75rem;
+   vertical-align: top;
+   border-top: 1px solid #dee2e6;
 }
 
 /* Fond parme */
@@ -164,4 +145,3 @@ td.reserve
    background-color:#FFBEFF;
    color:black;
 }
-

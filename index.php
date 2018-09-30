@@ -7,8 +7,8 @@ echo " <br>
 <table width='80%' cellspacing='0' cellpadding='0' align='center'>
    <tr>  
       <td class='texteAccueil'>
-         Cette application web permet de gérer l'hébergement des groupes de musique 
-         durant le festival Folklores du Monde.
+         Cette application web permet de gérer l'hébergement des groupes de sport 
+         durant le festival sportif du Monde.
       </td>
    </tr>
    <tr>

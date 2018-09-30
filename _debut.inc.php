@@ -8,6 +8,7 @@ echo '
 <title>Festival</title>
 <meta http-equiv="Content-Language" content="fr">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="css/cssGeneral.css" rel="stylesheet" type="text/css">
 </head>
 <body class="basePage">
@@ -21,17 +22,17 @@ echo '
       </td>
    </tr>
 </table>
-
+<br/>
 <!--  Tableau contenant les menus -->
-<table width="80%" cellpadding="0" cellspacing="0" class="tabMenu" align="center">
-   <tr>
-      <td class="menu"><a href="index.php">Accueil</a></td>
-      <td class="menu"><a href="listeEtablissements.php">
+<div class="menu">
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="index.php">Accueil</a>
+      <a class="navbar-brand" href="listeEtablissements.php">
       Gestion établissements</a></td>
-      <td class="menu"><a href="consultationAttributions.php">
+      <a class="navbar-brand" href="consultationAttributions.php">
       Attributions chambres</a></td>
-   </tr>
-</table>
+</nav>
+</div>
 <br>'
 ?>
 

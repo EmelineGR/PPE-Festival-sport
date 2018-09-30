@@ -24,7 +24,7 @@ if (!selectBase($connexion))
 // CETTE PAGE CONTIENT UN TABLEAU CONSTITUÉ D'1 LIGNE D'EN-TÊTE ET D'1 LIGNE PAR
 // ÉTABLISSEMENT
 
-echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='tabNonQuadrille'>
+echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='table table-striped'>
    <tr class='enTeteTabNonQuad'>
       <td colspan='4'>Etablissements</td>
    </tr>";
@@ -67,9 +67,9 @@ echo" <table width='70%' cellspacing='0' cellpadding='0' align='center' class='t
       $lgEtab=$rsEtab->fetch();
    }   
    echo"
-   <tr class='ligneTabNonQuad'>
-      <td colspan='4'><a href='creationEtablissement.php?action=demanderCreEtab'>
-      Création d un établissement</a ></td>
+   <tr>
+      <td class='table-info'><a href='creationEtablissement.php?action=demanderCreEtab'>
+      Création d' un établissement</a ></td>
   </tr>
 </table>";
 ?>

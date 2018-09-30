@@ -48,17 +48,17 @@ if ($action=='validerModifAttrib')
 
 echo "
 <table width='80%' cellspacing='0' cellpadding='0' align='center' 
-class='tabQuadrille'>";
+class='table'>";
 
    // AFFICHAGE DE LA 1ÈRE LIGNE D'EN-TÊTE
    echo "
    <tr class='enTeteTabQuad'>
-      <td colspan=$nb><strong>Attributions</strong></td>
+      <td class='table-active' colspan=$nb><strong>Attributions</strong></td>
    </tr>";
       
    // AFFICHAGE DE LA 2ÈME LIGNE D'EN-TÊTE (ÉTABLISSEMENTS)
    echo "
-   <tr class='ligneTabQuad'>
+   <tr class='table-primary'>
       <td>&nbsp;</td>";
       
    $req=obtenirReqEtablissementsOffrantChambres();
