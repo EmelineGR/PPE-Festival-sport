@@ -6,10 +6,10 @@
 	</head>
 	<body>
 		<div class="form">
-			<form method="post" action="traitement.php">
+			<form method="post" action="modificationEtablissement.php">
 				<fieldset>
 					<legend>Connexion</legend>
-					<p>Etablissement : <input type="text" name="PseudoMemb"/></p>
+					<p>Etablissement : <input type="text" name="etablissement"/></p>
 					<p>Mot de Passe : <input type="text" name="MDP"/></p>
 				</fieldset>
 				<center>
